@@ -17,7 +17,7 @@ let clickHandler = function(){
       document.querySelector(".articles").textContent = ``;
 
       //Display Article title and id of all the elements of the response array:
-      response.forEach((item, j) => {
+      response.forEach(item => {
         article = document.createElement("div");
         id = document.createElement("h3");
         id.textContent = `Article ${item.id}`;
